@@ -19,7 +19,7 @@ class IndexController extends Controller
      * 请求Api城市请求统计量
      */
     public function area(){
-        
+
         $HttpClient = new \Leaps\HttpClient\Adapter\Curl();
         $HttpClient->setOption(CURLOPT_TIMEOUT, self::CURLOPT_TIMEOUT);
         $api = Config('project.areaNumber');
